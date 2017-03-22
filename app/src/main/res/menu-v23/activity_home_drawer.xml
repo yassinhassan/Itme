@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myrestaurants"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title="Mes restaurants" />
+        <item
+            android:id="@+id/nav_myorders"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="Mes commandes" />
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@android:drawable/btn_star_big_off"
+            android:title="Favoris" />
+        <item
+            android:id="@+id/nav_logactivity"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="Historique" />
+    </group>
+
+    <item android:title="Paramètres du compte">
+        <menu>
+            <item
+                android:id="@+id/nav_paysetting"
+                android:icon="@android:drawable/ic_lock_idle_lock"
+                android:title="Paiement" />
+            <item
+                android:id="@+id/nav_info"
+                android:icon="?android:attr/fingerprintAuthDrawable"
+                android:title="Informations personnelles" />
+        </menu>
+    </item>
+
+</menu>
