@@ -62,7 +62,16 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PersonalSettingsActivity"
-            android:label="@string/title_activity_personal_settings"></activity>
+            android:label="@string/title_activity_personal_settings" />
+        <activity
+            android:name=".MyOrdersActivity"
+            android:label="@string/title_activity_my_orders"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:label="@string/title_activity_favorite_restaurants"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AllRestaurantsActivity"></activity>
     </application>
 
 </manifest>

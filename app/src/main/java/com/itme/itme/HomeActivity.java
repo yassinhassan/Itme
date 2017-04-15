@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -44,10 +45,18 @@ public class HomeActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         // GESTIONNAIRES D'EVENEMENTS :
-        Button mEmailSignInButton = (Button) findViewById(R.id.around_me);
-        mEmailSignInButton.setOnClickListener(new View.OnClickListener() {
+        ImageButton AroudMeButton = (ImageButton) findViewById(R.id.around_me);
+        AroudMeButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, MapAroundMeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton AllRestaurantsButton = (ImageButton) findViewById(R.id.all_restaurants);
+        AllRestaurantsButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, AllRestaurantsActivity.class);
                 startActivity(intent);
             }
         });
@@ -98,9 +107,9 @@ public class HomeActivity extends AppCompatActivity
             // Handle the camera action
             intent = new Intent(HomeActivity.this, MyRestaurantsActivity.class);
         } else if (id == R.id.nav_myorders) {
-
+            intent = new Intent(HomeActivity.this, MyOrdersActivity.class);
         } else if (id == R.id.nav_favorite) {
-
+            intent = new Intent(HomeActivity.this, FavoriteActivity.class);
         } else if (id == R.id.nav_logactivity) {
 
         } else if (id == R.id.nav_paysetting) {

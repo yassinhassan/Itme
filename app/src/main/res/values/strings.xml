@@ -101,5 +101,7 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_my_orders">MyOrdersActivity</string>
+    <string name="title_activity_favorite_restaurants">FavoriteRestaurantsActivity</string>
 
 </resources>

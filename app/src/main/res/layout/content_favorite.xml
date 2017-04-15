@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.itme.itme.MyRestaurantsActivity"
-    tools:showIn="@layout/activity_my_restaurants">
+    tools:context="com.itme.itme.FavoriteActivity"
+    tools:showIn="@layout/activity_favorite">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mes restaurants préférés"
-        tools:layout_editor_absoluteX="113dp"
+        android:text="Mes articles favorites"
+        tools:layout_editor_absoluteX="125dp"
         tools:layout_editor_absoluteY="247dp" />
 </android.support.constraint.ConstraintLayout>
