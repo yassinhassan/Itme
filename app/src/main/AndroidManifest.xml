@@ -55,7 +55,14 @@
 
         <activity
             android:name=".MapAroundMeActivity"
-            android:label="@string/title_activity_map_around_me"></activity>
+            android:label="@string/title_activity_map_around_me" />
+        <activity
+            android:name=".MyRestaurantsActivity"
+            android:label="@string/title_activity_my_restaurants"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PersonalSettingsActivity"
+            android:label="@string/title_activity_personal_settings"></activity>
     </application>
 
 </manifest>

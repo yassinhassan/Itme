@@ -91,8 +91,12 @@ public class HomeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        Intent intent = null;
+
+
         if (id == R.id.nav_myrestaurants) {
             // Handle the camera action
+            intent = new Intent(HomeActivity.this, MyRestaurantsActivity.class);
         } else if (id == R.id.nav_myorders) {
 
         } else if (id == R.id.nav_favorite) {
@@ -101,12 +105,14 @@ public class HomeActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_paysetting) {
 
-        } else if (id == R.id.nav_info) {
-
+        } else if (id == R.id.personal_info) {
+            intent = new Intent(HomeActivity.this, PersonalSettingsActivity.class);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
+        startActivity(intent);
         return true;
     }
 }
