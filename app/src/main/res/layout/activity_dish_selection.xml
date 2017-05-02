@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itme.itme.DishSelectionActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton_Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/imageView_photo"
+                    android:layout_width="304dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="?attr/colorBackgroundFloating"
+                    android:scaleType="centerInside"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/default_dish_1" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton_Add"
+                    app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+                <TextView
+                    android:id="@+id/textView_nom"
+                    android:layout_width="296dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nom du plat"
+                    android:textColor="@color/colorItmeLightPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_photo" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton_Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/imageView_photo"
+                    android:layout_width="304dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="?attr/colorBackgroundFloating"
+                    android:scaleType="centerInside"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/default_dish_2" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton_Add"
+                    app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+                <TextView
+                    android:id="@+id/textView_nom"
+                    android:layout_width="296dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nom du plat"
+                    android:textColor="@color/colorItmeLightPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_photo" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton_Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/imageView_photo"
+                    android:layout_width="304dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="?attr/colorBackgroundFloating"
+                    android:scaleType="centerInside"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/default_dish_3" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton_Add"
+                    app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+                <TextView
+                    android:id="@+id/textView_nom"
+                    android:layout_width="296dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nom du plat"
+                    android:textColor="@color/colorItmeLightPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_photo" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton_Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/imageView_photo"
+                    android:layout_width="304dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="?attr/colorBackgroundFloating"
+                    android:scaleType="centerInside"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/default_dish_4" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton_Add"
+                    app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+                <TextView
+                    android:id="@+id/textView_nom"
+                    android:layout_width="296dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nom du plat"
+                    android:textColor="@color/colorItmeLightPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_photo" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton_Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/imageView_photo"
+                    android:layout_width="304dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="?attr/colorBackgroundFloating"
+                    android:scaleType="centerInside"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/default_dish_5" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton_Add"
+                    app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+                <TextView
+                    android:id="@+id/textView_nom"
+                    android:layout_width="296dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nom du plat"
+                    android:textColor="@color/colorItmeLightPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_photo" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton_Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/imageView_photo"
+                    android:layout_width="304dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="?attr/colorBackgroundFloating"
+                    android:scaleType="centerInside"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/default_dish_6" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton_Add"
+                    app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+                <TextView
+                    android:id="@+id/textView_nom"
+                    android:layout_width="296dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nom du plat"
+                    android:textColor="@color/colorItmeLightPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_photo" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton_Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/imageView_photo"
+                    android:layout_width="304dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="?attr/colorBackgroundFloating"
+                    android:scaleType="centerInside"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/default_dish_7" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton_Add"
+                    app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+                <TextView
+                    android:id="@+id/textView_nom"
+                    android:layout_width="296dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nom du plat"
+                    android:textColor="@color/colorItmeLightPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_photo" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton_Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/imageView_photo"
+                    android:layout_width="304dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="?attr/colorBackgroundFloating"
+                    android:scaleType="centerInside"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/default_dish_8" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton_Add"
+                    app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+                <TextView
+                    android:id="@+id/textView_nom"
+                    android:layout_width="296dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nom du plat"
+                    android:textColor="@color/colorItmeLightPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_photo" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton_Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/imageView_photo"
+                    android:layout_width="304dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="?attr/colorBackgroundFloating"
+                    android:scaleType="centerInside"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/default_dish_9" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton_Add"
+                    app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+                <TextView
+                    android:id="@+id/textView_nom"
+                    android:layout_width="296dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nom du plat"
+                    android:textColor="@color/colorItmeLightPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_photo" />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

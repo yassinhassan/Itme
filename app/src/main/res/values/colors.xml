@@ -8,6 +8,7 @@
     <color name="colorAccent">#504ba7</color>
     <color name="colorItmeDarkPurple">#400548</color>
     <color name="colorItmeLightPurple">#690647</color>
+    <color name="colorItemBackground">#dfddf1</color>
 
     <color name="black_overlay">#66000000</color>
 </resources>
